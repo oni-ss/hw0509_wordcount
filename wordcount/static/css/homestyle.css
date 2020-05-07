@@ -1,0 +1,35 @@
+* {
+    text-align: center;
+}
+
+.header {
+    background-color:#8890fc;
+    padding:15px;
+}
+
+#mainheader {
+    font-size: 60px;
+}
+
+#subheader {
+    color: #414141;
+}
+
+.count {
+    background-color:#f6f6ff;
+    padding:20px;
+}
+
+footer {
+    background-color:#8890fc;
+    padding:3px;
+}
+
+#btn {
+    font-size:15px;
+    padding: 10px;
+}
+
+textarea {
+    font-size: 20px;
+}

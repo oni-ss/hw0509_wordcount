@@ -1,0 +1,43 @@
+.header {
+    text-align: center;
+    background-color:#8890fc;
+    padding:15px;
+}
+
+#mainheader {
+    font-size: 60px;
+}
+
+.realbody {
+    background-color:#f6f6ff;
+    padding: 15px 0px;
+}
+
+.wordcount {
+    padding-left: 15px;
+}
+
+#count {
+    color:#8890fc;
+    font-size: 30px;
+}
+
+.text_count {
+    display: inline-block;
+    padding: 10px 20px 10px 15px;
+    max-width: 50%;
+    vertical-align: top;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.tomain {
+    padding: 15px 50px;
+    text-align: right;
+}
+
+footer {
+    background-color:#8890fc;
+    padding:3px;
+    text-align: center;
+}

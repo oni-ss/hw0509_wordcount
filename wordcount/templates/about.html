@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+<head>
+    <title>WORDCOUNT - 손시온</title>
+    <link href="{% static 'css/aboutstyle.css' %}" rel="stylesheet">
+    <style> 
+        @font-face { font-family: 'KyoboHand'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'netmarbleL'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleL.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'netmarbleB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff'); font-weight: normal; font-style: normal; }
+    </style>
+</head>
+<body>
+    <div class="header" style="font-family:netmarbleB">
+        <h1 id="mainheader">글자수세기</h1>
+        <h4 id="subheader">홈페이지 제작자 <a id="me">손시온</a>에 대하여</h4>
+    </div>
+    <div class="realbody" style="font-family:netmarbleL">
+    <p>이 페이지는 글자수를 세주는 홈페이지입니다.
+    <br>많은 이용 부탁드립니다.</p>
+
+    <div class="tomain">
+        <a href="{%url 'home'%}" style="font-family:netmarbleL">메인으로 돌아가기</a>
+    </div>
+    </div>
+</body>
+<footer>
+    <p>made by <a href="{%url 'about'%}" style="font-family:netmarbleL">손시온</a></p>
+</footer>
+<!-- body는 알아서 채워넣고 footer에는 
+    나에 관한 링크. 과홈페이지나 멋사, 구글계정 등으로 연결-->
+
+</html>

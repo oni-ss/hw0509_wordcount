@@ -1,0 +1,33 @@
+.header {
+    text-align: center;
+    background-color:#8890fc;
+    padding:15px;
+}
+
+#mainheader {
+    font-size: 60px;
+}
+
+.realbody {
+    background-color:#f6f6ff;
+    padding: 15px 0px;
+}
+
+#subheader {
+    color: #414141;
+}
+
+#me {
+    font-size:19px;
+}
+
+.tomain {
+    padding: 15px 50px;
+    text-align: right;
+}
+
+footer {
+    background-color:#8890fc;
+    padding:3px;
+    text-align: center;
+}

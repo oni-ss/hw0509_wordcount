@@ -1,0 +1,41 @@
+{% load static %}
+<html>
+<head>
+    <title>WORDCOUNT - 결과</title>
+    <link href="{% static 'css/resultstyle.css' %}" rel="stylesheet">
+    <style> 
+        @font-face { font-family: 'KyoboHand'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'netmarbleL'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleL.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'netmarbleB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff'); font-weight: normal; font-style: normal; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="mainheader" style="font-family:netmarbleB">글자수세기</h1>
+    </div>
+    <div class="realbody">
+        <div class="wordcount">
+            <h3 style="font-family:netmarbleL">입력한 텍스트는 <a id="count">{{count}}</a>개의 단어로 이루어져있습니다.</h3>
+        </div>
+        <!--text and count per word-->
+        <div class="text_count" id="inputtext" style="font-family:netmarbleL">
+            <h3>입력한 텍스트:</h3>
+            {{full}}
+            <br><br>
+        </div>
+        <div class="text_count" style="font-family:netmarbleL">
+            <h3>단어당 나온 횟수:</h3>
+            {%for word, num in dictionary%}
+            {{word}} : {{num}}
+            <br>
+            {%endfor%}
+        </div>
+        <div class="tomain">
+            <a href="{%url 'home'%}" style="font-family:netmarbleL">메인으로 돌아가기</a>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>made by <a href="{%url 'about'%}" style="font-family:netmarbleL">손시온</a></p>
+</footer>
+</html>
