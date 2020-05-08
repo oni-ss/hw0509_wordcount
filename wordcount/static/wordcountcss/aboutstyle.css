@@ -1,6 +1,6 @@
 .header {
     text-align: center;
-    background-color:#8890fc;
+    background-color:#6b8bf3;
     padding:15px;
 }
 
@@ -10,7 +10,7 @@
 
 .realbody {
     background-color:#f6f6ff;
-    padding: 15px 0px;
+    padding-top:15px;
 }
 
 #subheader {
@@ -21,13 +21,17 @@
     font-size:19px;
 }
 
+.information {
+    padding-left:25px;
+}
+
 .tomain {
     padding: 15px 50px;
     text-align: right;
 }
 
 footer {
-    background-color:#8890fc;
+    background-color:#6b8bf3;
     padding:3px;
     text-align: center;
 }
